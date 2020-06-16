@@ -1,5 +1,6 @@
 package com.gaetan.covid19.datafetch;
 
+import com.gaetan.covid19.datafetch.model.ContryData;
 import com.google.gson.JsonObject;
 
 import retrofit2.Call;
@@ -18,14 +19,14 @@ public class DataProviderService {
                 .build();
         CovidApi covidApi = retrofit.create(CovidApi.class);
         covidApi.getCountryData("France")
-                .enqueue(new Callback<JsonObject>() {
+                .enqueue(new Callback<ContryData>() {
                     @Override
-                    public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
+                    public void onResponse(Call<ContryData> call, Response<ContryData> response) {
                         System.out.println(response.body());
                     }
 
                     @Override
-                    public void onFailure(Call<JsonObject> call, Throwable t) {
+                    public void onFailure(Call<ContryData> call, Throwable t) {
 
                     }
                 });
