@@ -7,6 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import android.os.Bundle;
 
 import com.gaetan.covid19.datafetch.DataProviderService;
+import com.gaetan.covid19.datafetch.model.CovidDataModel;
 
 public class MainActivity extends AppCompatActivity {
     public final String URL = "https://coronavirus-19-api.herokuapp.com/";
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
                 .baseUrl(URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();*/
-        new DataProviderService().getData("France");
+        CovidDataModel DataModel= new DataProviderService().getData("France");
+        System.out.println(DataModel);
     }
 }

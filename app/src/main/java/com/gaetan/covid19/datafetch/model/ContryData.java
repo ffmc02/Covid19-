@@ -85,9 +85,19 @@ public class ContryData{
 	@NonNull
 	@Override
 	public String toString() {
-		return "GlobalData{" +
-				"cases: " + cases+
-				", deaths: " + deaths +
-				", recorved: "+recovered;
+		return
+				"CountryData{" +
+						"Contry =" +country + '\''+
+						", recorvered ='" + recovered +'\''+
+						", cases='" + cases +'\''+
+				"Critical = '" +critical +'\''+
+						", Actove = '" + active  +'\''+
+				", deathsPerOneMillion=" + deathsPerOneMillion +'\''+
+				", deaths= '"+ deaths  +'\''+
+				", testesPerMillion ='"	+ testsPerOneMillion  +'\''+
+						",todayCases ='" + todayCases+'\''+
+						", todayDeaths'" +todayDeaths +'\''+
+						", totalTests'" + totalTests+ '\''+
+				"}";
 	}
 }

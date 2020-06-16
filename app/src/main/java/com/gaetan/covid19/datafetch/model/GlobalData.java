@@ -1,5 +1,7 @@
 package com.gaetan.covid19.datafetch.model;
 
+import androidx.annotation.NonNull;
+
 public class GlobalData{
 	private long recovered;
 	private long cases;
@@ -27,5 +29,14 @@ public class GlobalData{
 
 	public void setDeaths(long deaths) {
 		this.deaths = deaths;
+	}
+
+	@NonNull
+	@Override
+	public String toString() {
+		return "GlobalData{"+
+				"cases : "+ cases+
+				", deaths: ;"+ deaths+
+				", recovered:" + recovered + "}";
 	}
 }
