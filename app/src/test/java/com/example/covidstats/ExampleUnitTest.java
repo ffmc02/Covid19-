@@ -1,4 +1,4 @@
-package com.gaetan.covid19;
+package com.example.covidstats;
 
 import org.junit.Test;
 
