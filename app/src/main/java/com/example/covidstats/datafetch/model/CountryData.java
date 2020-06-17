@@ -141,19 +141,17 @@ public class CountryData{
     @NonNull
     @Override
     public String toString() {
-        return "CountryData{" +
-                "country = '" + country + '\'' +
-                ",recovered = '" + recovered + '\'' +
-                ",cases = '" + cases + '\'' +
-                ",critical = '" + critical + '\'' +
-                ",deathsPerOneMillion = '" + deathsPerOneMillion + '\'' +
-                ",active = '" + active + '\'' +
-                ",casesPerOneMillion = '" + casesPerOneMillion + '\'' +
-                ",deaths = '" + deaths + '\'' +
-                ",testsPerOneMillion = '" + testsPerOneMillion + '\'' +
-                ",todayCases = '" + todayCases + '\'' +
-                ",todayDeaths = '" + todayDeaths + '\'' +
-                ",totalTests = '" + totalTests + '\'' +
-                '}';
+        return
+                "\nPays = '" + country +  '\'' +
+                "\n nombre de personne rétablie = " + recovered + "Personnes" +
+                "\n nombre de cas en " + country +" = " + cases + "Cas" +
+                "\n nombre de cas en réanimation  = " + critical + "Cas" +
+                "\n décès par million = " + deathsPerOneMillion + "personne décédé" +
+                "\nCas par millions = " + casesPerOneMillion
+              +" \n"   + deaths +" Décès " +
+                "\n Nombre de teste positif   = " + testsPerOneMillion + "testes"+
+                "\n nombre de cas AUjourd'hui = " + todayCases +  "Cas" +
+                "\n Nombre de décé aujourd'hui = " + todayDeaths + "Décés" +
+                "\n Nombre de teste réalisé au total " + totalTests ;
     }
 }

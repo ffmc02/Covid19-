@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">CovidStats</string>
+    <string name="stats_globales">Statistique mondiale</string>
+    <string name="name">"Nom du pays  "</string>
+    <string name="button">rechercher</string>
+    <string name="listcontry">World = monde, France, USA = état unis, Spain= espagne, Italy= italie, \n
+        Germany =allemangne, Peru= Perou, Belgium= belgique, Japan=Japon \n
+        et bien d\'autre \n  si vous souhaitez un autre pays mette son Nom  en anglais.
+    </string>
+    <string name="legende">se reporté a la liste ci dessous</string>
+    <string name="statscountry">Activité du pays</string>
+    <string name="givenduringlloading">Donnée en cour de chargement \n veuillez patientez</string>
+    <string name="load">Chargement des donnée mondial en cours</string>
 </resources>
