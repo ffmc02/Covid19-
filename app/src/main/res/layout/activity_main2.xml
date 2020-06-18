@@ -26,6 +26,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textview4"
         app:layout_constraintVertical_bias="0.286" />
 
+    <ProgressBar
+        android:id="@+id/ProgressCity"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="55dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="66dp"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview3"
+        app:layout_constraintVertical_bias="0.123" />
+
     <TextView
         android:id="@+id/textview4"
         android:layout_width="276dp"

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.example.covidstats.datafetch.CovidApi;
 import com.example.covidstats.datafetch.model.GlobalData;
@@ -18,6 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String EXTRA_MESSAGE = "com.example.covidstats.MESSAGE";
+    ProgressBar progressBar;
     TextView textView;
     EditText editText;
     Button button;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.textview);
+        progressBar= findViewById(R.id.ProgresGlobal);
         editText = findViewById(R.id.editTextCountry);
         button = findViewById(R.id.button);
         button.setOnClickListener(this);
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onResponse(Call<GlobalData> call, Response<GlobalData> response) {
                         textView.setText(response.body().toString());
+                        progressBar.setVisibility(View.GONE);
                     }
 
                     @Override
