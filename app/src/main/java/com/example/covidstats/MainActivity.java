@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     {
         Toast.makeText(getApplicationContext(), "World = monde, France, USA = état unis, Spain= espagne, Italy= italie, \n" +
-                "        Germany =allemangne, Peru= Perou, Belgium= belgique, Japan=Japon \n" +
-                "        et bien d\'autre \n  si vous souhaitez un autre pays mette son Nom  en anglais Et la Premiere lettre en capital", Toast.LENGTH_LONG).show();
+                "        Germany = allemangne, Peru= Perou, Belgium=belgique, Japan=Japon" +
+                "        et bien d\'autre \n  si vous souhaitez un autre pays mette son Nom  en anglais \n Et la Premiere lettre en capital", Toast.LENGTH_LONG).show();
     }
 
 }
