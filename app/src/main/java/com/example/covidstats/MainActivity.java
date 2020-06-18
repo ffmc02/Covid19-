@@ -9,8 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.covidstats.datafetch.CovidApi;
 import com.example.covidstats.datafetch.model.GlobalData;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -23,12 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView textView;
     EditText editText;
     Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.textview);
-        progressBar= findViewById(R.id.ProgresGlobal);
+        progressBar = findViewById(R.id.ProgresGlobal);
         editText = findViewById(R.id.editTextCountry);
         button = findViewById(R.id.button);
         button.setOnClickListener(this);
@@ -61,4 +65,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
     }
+
+    public void LENGTH_SHORT(View view)
+
+    {
+        Toast.makeText(getApplicationContext(), "World = monde, France, USA = état unis, Spain= espagne, Italy= italie, \n" +
+                "        Germany =allemangne, Peru= Perou, Belgium= belgique, Japan=Japon \n" +
+                "        et bien d\'autre \n  si vous souhaitez un autre pays mette son Nom  en anglais Et la Premiere lettre en capital", Toast.LENGTH_LONG).show();
+    }
+
 }

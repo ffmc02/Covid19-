@@ -11,4 +11,11 @@
     <string name="statscountry">Activité du pays</string>
     <string name="givenduringlloading">Donnée en cour de chargement \n veuillez patientez</string>
     <string name="load">Chargement des donnée mondial en cours</string>
+    <string name="Cas"></string>
+    <string name="critical"></string>
+    <string name="totaltests"></string>
+    <string name="todayCases"></string>
+    <string name="today">Stats d\'Aujourd\'hui \n (attention les informations sont mises à jour le soir \n entre 16h et 20h00 )</string>
+    <string name="todayDeaths"></string>
+    <string name="help">\?</string>
 </resources>
